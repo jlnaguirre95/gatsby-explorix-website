@@ -19,6 +19,7 @@ export default createGlobalStyle`
         font-family: 'Roboto', sans-serif;
         font-size: 1.6rem;
         box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     a {
@@ -46,12 +47,12 @@ export default createGlobalStyle`
 
 export const Container = styled.div`
     width: 90%;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
 `
 
 export const Button = styled(Link)`
-    min-width: 10rem;
+    min-width: 100px;
     padding: ${({ big }) => big ? '1.6rem 4rem' : '1rem 3.2rem'};
     font-size: ${({ big }) => big && '2rem'};
     background-color: ${({ primary }) => primary ? '#f26a2e' : '#077bf1'};

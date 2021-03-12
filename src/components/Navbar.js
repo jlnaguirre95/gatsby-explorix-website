@@ -11,16 +11,17 @@ const Navbar = () => {
 			<NavContainer>
 				<Logo><h1>Explorix</h1></Logo>
 				<Navigation>
-					<NavItem><Link>About us</Link></NavItem>
-					<NavItem><Link>Trips</Link></NavItem>
-					<NavItem><Link>Careers</Link></NavItem>
-					<NavItem><Link>Contact</Link></NavItem>
+					<NavItem><Link to="#">About us</Link></NavItem>
+					<NavItem><Link to="/page-2">Trips</Link></NavItem>
+					<NavItem><Link to="#">Careers</Link></NavItem>
+					<NavItem><Link to="#">Contact</Link></NavItem>
 				</Navigation>
 				<MenuBars />
 				<NavButton 
 					primary
 					rounded 
 					big
+					to="#"
 				>
 					Book a Flight
 				</NavButton>
@@ -63,7 +64,11 @@ const Navigation = styled.ul`
 	}
 `
 
-const NavItem = styled.li``
+const NavItem = styled.li`
+	a {
+		color: #fff;
+	}
+`
 
 const MenuBars = styled(FaBars)`
 	display: none;

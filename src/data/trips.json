@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "img": "../assets/images/travel-1.jpg",
+        "name": "Zhangjiajie National Forest Park, China"
+    },
+    {
+        "id": 2,
+        "img": "../assets/images/travel-2.jpg",
+        "name": "Cinque Terre, Italy"
+    },
+    {
+        "id": 3,
+        "img": "../assets/images/travel-3.jpg",
+        "name": "Trolltunga, Norway"
+    },
+    {
+        "id": 4,
+        "img": "../assets/images/travel-4.jpg",
+        "name": "Biertan, Romania"
+    },
+    {
+        "id": 5,
+        "img": "../assets/images/travel-5.jpg",
+        "name": "Top of the Burj Khalifa, Dubai"
+    },
+    {
+        "id": 6,
+        "img": "../assets/images/travel-6.jpg",
+        "name": "Cathedral Cove, New Zealand"
+    },
+    {
+        "id": 7,
+        "img": "../assets/images/travel-7.jpg",
+        "name": "Bora Bora, French Polynesia"
+    },
+    {
+        "id": 8,
+        "img": "../assets/images/travel-8.jpg",
+        "name": "Palau, Micronesia"
+    }
+]

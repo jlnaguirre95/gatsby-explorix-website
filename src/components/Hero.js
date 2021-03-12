@@ -5,27 +5,27 @@ import { Button } from "./GlobalStyle"
 import HeroVideo from "../assets/videos/bg-hero-video-2.mp4"
 
 const Hero = () => {
-  return (
-    <HeroContainer>
-      <HeroBg>
-        <video
-          src={HeroVideo}
-          type="video/mp4"
-          autoPlay
-          loop
-          muted
-          playsInLine
-        />
-      </HeroBg>
-      <HeroContent>
-        <h1>Unreal Destinations</h1>
-        <h4>Out of this world</h4>
-        <Button primary rounded big to="/trips">
-          Travel Now
-        </Button>
-      </HeroContent>
-    </HeroContainer>
-  )
+    return (
+        <HeroContainer>
+            <HeroBg>
+                <video
+                src={HeroVideo}
+                type="video/mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                />
+            </HeroBg>
+            <HeroContent>
+                <h1>Unreal Destinations</h1>
+                <h4>Out of this world</h4>
+                <Button primary rounded big to="/trips">
+                    Travel Now
+                </Button>
+            </HeroContent>
+        </HeroContainer>
+    )
 }
 
 export default Hero
@@ -40,8 +40,8 @@ const HeroContainer = styled.div`
 
     &::before {
         content: "";
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
@@ -52,8 +52,8 @@ const HeroContainer = styled.div`
     }
 `
 const HeroBg = styled.div`
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -72,7 +72,7 @@ const HeroContent = styled.div`
     text-align: center;
 
     h1 {
-        font-size: clamp(4rem, 5vw, 5rem);
+        font-size: clamp(4rem, 5vw, 5.5rem);
         letter-spacing: 0.3rem;
         margin-bottom: 1rem;
 
