@@ -50,7 +50,7 @@ const Trips = () => {
 export default Trips
 
 const TripsSection = styled.section`
-    height: 100vh;
+    min-height: 100vh;
     padding: 5rem 0
 `
 
@@ -86,11 +86,12 @@ const TripSpeach = styled.p`
 const TripsWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 1rem;
+    column-gap: 2rem;
     justify-items: center;
 
     @media screen and (max-width: 1200px) {
         grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
     }
 
     @media screen and (max-width: 650px) {

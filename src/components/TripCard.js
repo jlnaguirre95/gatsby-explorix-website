@@ -56,7 +56,7 @@ const TripInfo = styled.div`
 `
 
 const TextWrapper = styled.div`
-    width: 60%;
+    width: 65%;
     display: flex;
 
     h4 {
@@ -75,5 +75,9 @@ const CardButton = styled(Button)`
     position: absolute;
     bottom: 2rem;
     left: 50%;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+
+    &:hover {
+        transform: translate(-50%, -2px);
+    }
 `

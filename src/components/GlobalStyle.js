@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle, css } from 'styled-components'
 import { Link } from 'gatsby';
 
 export default createGlobalStyle`
@@ -32,6 +32,12 @@ export default createGlobalStyle`
         list-style: none;
     }
 
+    button,
+    input[type="text"] {
+        border: none;
+        outline: none 
+    }
+
     h1,
     h2,
     h3 {
@@ -53,14 +59,18 @@ export const Container = styled.div`
 
 export const Button = styled(Link)`
     min-width: 100px;
-    padding: ${({ big }) => big ? '1.6rem 4rem' : '1rem 3.2rem'};
-    font-size: ${({ big }) => big && '2rem'};
+    padding: 1rem 3.2rem;
     background-color: ${({ primary }) => primary ? '#f26a2e' : '#077bf1'};
     color: #fff;
     border-radius: ${({ rounded }) => rounded ? '5rem' : 'none'};
     cursor: pointer;
     display: inline-block;
     transition: 300ms !important;
+
+    ${({ big }) => big && css`
+        font-size: 2rem;
+        padding: 1.6rem 4rem;
+    `}
 
     &:hover {
         background-color: ${({ primary }) => primary ? '#077bf1' : '#f26a2e'};

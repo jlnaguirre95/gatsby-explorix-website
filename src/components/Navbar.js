@@ -12,7 +12,7 @@ const Navbar = () => {
 				<Logo><h1>Explorix</h1></Logo>
 				<Navigation>
 					<NavItem><Link to="#">About us</Link></NavItem>
-					<NavItem><Link to="/page-2">Trips</Link></NavItem>
+					<NavItem><Link to="#">Trips</Link></NavItem>
 					<NavItem><Link to="#">Careers</Link></NavItem>
 					<NavItem><Link to="#">Contact</Link></NavItem>
 				</Navigation>

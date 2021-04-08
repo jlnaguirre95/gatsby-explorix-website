@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 import GlobalStyle from './GlobalStyle';
 
 import Navbar from "./Navbar"
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
 
@@ -12,6 +13,7 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <Navbar />
       <main>{children}</main>
+      <Footer />
     </>
   )
 }
